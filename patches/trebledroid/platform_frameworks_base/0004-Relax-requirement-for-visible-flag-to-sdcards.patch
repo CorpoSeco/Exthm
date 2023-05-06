@@ -21,11 +21,11 @@ index c4333d96f92e..2913a094be6a 100644
              // Adoptable public disks are visible to apps, since they meet
              // public API requirement of being in a stable location.
 -            if (vol.disk.isAdoptable()) {
-+	    // Assume all SDs match this as well
++            // Assume all SDs match this as well
 +            if (vol.disk.isAdoptable() || vol.disk.isSd()) {
                  vol.mountFlags |= VolumeInfo.MOUNT_FLAG_VISIBLE_FOR_WRITE;
-             }
- 
+             } else if (vol.disk.isSd()) {
+                 vol.mountFlags |= VolumeInfo.MOUNT_FLAG_VISIBLE_FOR_WRITE;
 -- 
-2.25.1
+2.34.1
 
