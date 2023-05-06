@@ -1,7 +1,7 @@
 From ac2bc86a3bbab924edb84ddead84a1be31387d7c Mon Sep 17 00:00:00 2001
-From: lemezohaib <zhbkhan644@gmail.com>
+From: TheAtt1la <alittauwu@gmail.com>
 Date: Sat, 6 May 2023 19:38:41 +0000
-Subject: [PATCH 2/2] Revert AuthService: Add support for workaround side fps
+Subject: [PATCH] Revert AuthService: Add support for workaround side fps
  props
 
 ---
